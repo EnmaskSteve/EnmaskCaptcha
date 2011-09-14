@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="system" method="upgrade">
+  <name>System - Enmask Captcha</name>
+  <author>Enmask</author>
+  <creationDate>September 2011</creationDate>
+  <copyright>Copyright 2011 Enmask.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>support@enmask.com</authorEmail>
+  <authorUrl>www.Enmask.com</authorUrl>
+  <version>1.0</version>
+  <description>A plugin for showing Enmask captcha in Joomla files</description>
+  <files>
+    <filename plugin="Enmask_Captcha">Enmask_Captcha.php</filename>
+    <filename>Enmask_Captcha/enmask.captcha.php</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="forms" label="Joomla! Forms">
+        <field name="spacer4" type="spacer" hr="true" />
+        <field name="Joomla! Forms" type="spacer" default=""/>
+        <field name="spacer5" type="spacer" hr="true" />
+        <field type="radio" name="addToUserRegistration" default="1" label="Protect Registration Page?">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field type="radio" name="addToLogin" default="1" label="Protect Login Page?" description="Doesn't work for login module">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field type="radio" name="addToFUser" default="1" label="Protect Forgot User Page?">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field type="radio" name="addToFPass" default="1" label="Protect Forgot Pass Page?">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field type="radio" name="addToContact" default="1" label="Add to Contact Page?">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</install>
